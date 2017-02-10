@@ -23,4 +23,14 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction)selectRadio:(id)sender {
+    self.radio1.state = 0;
+    self.radio2.state = 0;
+    self.radio3.state = 0;
+    NSButton *radio = sender;
+    radio.state = !radio.state;
+    
+    
+    
+}
 @end
